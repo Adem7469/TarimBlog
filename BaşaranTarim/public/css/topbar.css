@@ -1,0 +1,58 @@
+.topbar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #fff;
+ }
+ .topbar .wrapper{
+    width: 100%;
+    max-width: 1366px;
+    display: flex;
+ }
+
+ 
+ 
+ 
+ .topbar .center {
+   
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    
+ }
+ .topbar .center a{
+   padding-left: 20px;
+ }
+ 
+ 
+ 
+
+ 
+ /* Scroll animation */
+ .topbar .wrapper{
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateY(-10px);
+ }
+ .topbar .wrapper.active{
+    opacity: 1;
+    transform: translateY(0px);
+ }
+ 
+ 
+ 
+ 
+ .topbar .center, .topbar .right{
+    transform: translateX(-10px) translateY(-10px);
+    transition: all 0.5s;
+    opacity: 0;
+ }
+ .topbar .wrapper.active .center, .topbar .wrapper.active .right{
+    transform: translateX(0px) translateY(0px);
+    opacity: 1;
+ }

@@ -1,0 +1,47 @@
+
+
+ .posts .post .categories span {
+    padding: 5px;
+    font-family: 'Arvo', serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    line-height: 23px;
+ }
+ 
+ 
+ 
+ .posts .post .categories {
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+ }
+ 
+ .posts .post .categories span {
+    display: block;
+    width: calc(50% - 10px);
+    font-family: 'Arvo', serif;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 2px;
+    border-radius: 3px;
+    cursor: pointer;
+ }
+ 
+ .posts .post .area span {
+    margin-top: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    display: block;
+    padding: 3px;
+    margin-bottom: 5px;
+    background-color: rgba(0, 0, 0, 0.03);
+ }
+
+ 
+ 
+ 
+ 
+ 
